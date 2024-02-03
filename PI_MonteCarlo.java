@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Lab04_03 {
+public class PI_MonteCarlo {
 	
 		public static void main(String[] args) {
 			
