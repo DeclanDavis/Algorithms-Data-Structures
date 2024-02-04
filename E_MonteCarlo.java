@@ -4,15 +4,14 @@ public class E_MonteCarlo {
 		public static void main(String[] args) {
 			
 			//use the Monte Carlo method to estimate the value of
-			// the mathematical constant e, 
-			// the base of the natural logarithm
+			// the mathematical constant e, the base of the natural logarithm
 			//(to get our specified variable)
 			Scanner sc = new Scanner(System.in);
 			long num = sc.nextInt();
 			
 			double total = 0;
 			//generating the number of times we will generate a random number(doing the dice roll) specified by user input
-      // the greater the number the more simulations we will run and hence the more accurate the estimation
+     			// the greater the number the more simulations we will run and hence the more accurate the estimation
 			for(int i = 0; i<num; i++) {
 				int sum = 0;
 				int count = 0;
