@@ -1,5 +1,3 @@
-package Lab06;
-//import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lab06_V02 {
