@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class SquidGame_MonteCarlo {
 
-  //
-	
 	//method to make the maze, use boolean and set each row to have one true, one false
 	    public static boolean[][] generateMaze() {
 	    boolean[][] maze = new boolean[19][2]; //if we reach index 18 we have crossed the bridge.
