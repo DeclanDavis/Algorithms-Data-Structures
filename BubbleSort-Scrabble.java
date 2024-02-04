@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lab06_V02 {
+public class ScrabbleSort {
 	
 	public static void main(String[] args) {
 
