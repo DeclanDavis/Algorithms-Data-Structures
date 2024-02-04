@@ -15,9 +15,9 @@ public class E_MonteCarlo {
 			for(int i = 0; i<num; i++) {
 				int sum = 0;
 				int count = 0;
-				while(sum<=600) {							//note (math.random()*600)+1);
-															        // plus 1 changes from 0 1 2 3 4 5 to
-															        // 1 2 3 4 5 6 - 600 
+				while(sum<=600) {	//note (math.random()*600)+1);
+							// plus 1 changes from 0 1 2 3 4 5 to
+							// 1 2 3 4 5 6 - 600 
 					sum = sum + ((int)(Math.random()*600)+1); // like rolling a dice, will generate a random
 					count = count +1;	                        //number between 1 and 600
 					//counting how many times we've generated a number (like rolled our dice)					
