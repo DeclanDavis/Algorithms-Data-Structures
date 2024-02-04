@@ -1,5 +1,3 @@
-package Lab05;
-
 import java.util.Scanner;
 
 public class BaseConversion {
