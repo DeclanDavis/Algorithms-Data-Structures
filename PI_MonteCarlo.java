@@ -3,11 +3,13 @@ public class PI_MonteCarlo {
 	
 		public static void main(String[] args) {
 			
-			//use the Monte Carlo simulation to estimate the value of
-			// PI, generate points within a square and determine the ratio 
-			// of points that fall within the inscribed circle to the total number of points 
-			// this ratio is used to estimate PI 
-			// (to get our specified variable)
+			/*
+			use the Monte Carlo simulation to estimate the value of
+			PI, generate points within a square and determine the ratio 
+			of points that fall within the inscribed circle to the total number of points 
+			this ratio is used to estimate PI 
+			(to get our specified variable)
+			*/
 			Scanner sc = new Scanner(System.in);
 			long num = sc.nextInt();
 			
@@ -27,10 +29,11 @@ public class PI_MonteCarlo {
 				}
 			}
 			
-			//________Step 2:___________
-			//After completing all of the inserted Co-Ords and 
-			//counting which are in the circle and which are in the square
-			//we can estimate the value of PI by 4C/S
+			/*________Step 2:___________
+			After completing all of the inserted Co-Ords and 
+			counting which are in the circle and which are in the square
+			we can estimate the value of PI by 4C/S
+			*/
 			double estPI = (4*C) /S;
 			System.out.println("The estimated value of PI is: " + estPI);
 			sc.close();
