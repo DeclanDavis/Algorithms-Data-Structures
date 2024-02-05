@@ -3,9 +3,11 @@ public class E_MonteCarlo {
 	
 		public static void main(String[] args) {
 			
-			//use the Monte Carlo method to estimate the value of
-			// the mathematical constant e, the base of the natural logarithm
-			//(to get our specified variable)
+			/* 
+   			 Use the Monte Carlo method to estimate the value of
+			 the mathematical constant e, the base of the natural logarithm
+			 (to get our specified variable)
+			*/
 			Scanner sc = new Scanner(System.in);
 			long num = sc.nextInt();
 			
