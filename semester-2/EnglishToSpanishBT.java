@@ -19,9 +19,6 @@ public class Lab07_v05 {
         // Get input, translate, and print translation
         String[] EnglishSentenceArray = TranslateEnglishToSpanish(binaryTree);
 
-        // Print the structure of the binary tree
-        // binaryTree.printTree(binaryTree.root);
-
         int steps = binaryTree.steps;
         System.out.println("\nSteps Total: " + steps);
 
@@ -30,9 +27,6 @@ public class Lab07_v05 {
         System.out.println("\nSteps Average: " + AverageStepsPerWord);
 
         System.out.println("\nThe resulting binary tree has " + binaryTree.maxLevelCount + " levels.");
-
-        // System.out.println("\nAverage Steps Per Word: " +
-        // binaryTree.averageStepsPerWord);
 
     }
 
@@ -46,11 +40,6 @@ public class Lab07_v05 {
         EnglishSentence = EnglishSentence.toLowerCase(); // Verify input by making lowercase
         String[] EnglishSentenceArray = EnglishSentence.split(" "); // this will split the sentence words into elements
                                                                     // in an array
-
-        // for(int i = 0; i < EnglishSentenceArray.length; i++) { //Print out each index
-        // to check
-        // System.out.println(EnglishSentenceArray[i]);
-        // }
 
         String[] SpanishSentence = new String[EnglishSentenceArray.length]; // Since word by word translation
                                                                             // English/Spanish sentences will be the
@@ -66,50 +55,35 @@ public class Lab07_v05 {
         for (int i = 0; i < SpanishSentence.length; i++) {
             System.out.print(SpanishSentence[i].toUpperCase() + " ");
         }
-
         return EnglishSentenceArray;
-
     }
 
     public static void readCSVAndInsert(String filePath, Tree binaryTree) {
-
         File file = new File(filePath);
-
         ArrayList<String> fileArrayList = new ArrayList<>(); // Store read in file as an ArrayList
         try {
-
             Scanner sc = new Scanner(file);
-
             // Read each line from the file and split into English and Spanish words
             while (sc.hasNextLine()) {
-
                 // this will take the full String e.g. aardvark,cerdo hormiguero
                 String line = sc.nextLine();
                 // will add each line
                 fileArrayList.add(line);
-
             }
             sc.close();
         } catch (Exception e) {
             System.err.println("An error occurred: " + e.getMessage());
         }
-
         System.out.println("Inserted List: \n" + fileArrayList); //
-
         shuffleArrayList(fileArrayList); // shuffle is used to reOrder an ArrayList, it is a library for arrayLists
-
         System.out.println("ReOrdered List: \n" + fileArrayList);
-
         // Now insert the shuffled ArrayList into the binary tree
         for (int i = 0; i < fileArrayList.size(); i++) {
-
             String line = fileArrayList.get(i);
-
             // this will take the split the String at the "," : "aardvark,cerdo hormiguero"
             // into two strings in the String array pair. pair[0] == aardvark pair[1]==cerdo
             // hormiquero
             String[] pair = line.split(","); // Split the line using comma at comma
-
             if (pair.length == 2) {
                 // Insert the pair of English and Spanish words into the binary tree
                 binaryTree.insert(pair); // Insert each English-Spanish pair into the binary tree
@@ -118,22 +92,17 @@ public class Lab07_v05 {
     }
 
     public static ArrayList<String> shuffleArrayList(ArrayList<String> list) {
-
         Random rand = new Random();
         int n = list.size();
-
         // Iterate over the list from the last element to the first
         for (int i = n - 1; i > 0; i--) {
-
             // Generate a random index j between 0 <= j <= i
             int j = rand.nextInt(i + 1);
-
             // Swap elements at i and j indices
             String temp = list.get(i);
             list.set(i, list.get(j));
             list.set(j, temp);
         }
-
         return list;
     }
 
@@ -153,7 +122,6 @@ public class Lab07_v05 {
         public Node root; // Root node of the binary tree
         public int maxLevelCount = 0;
         private int currentLevelCount = 0;
-
         public int steps;
 
         public Tree() {
@@ -163,17 +131,14 @@ public class Lab07_v05 {
         public void insert(String[] pair) {
             // Trim the English word before insertion to remove any invisible characters
             String englishWord = pair[0].trim();
-
             // two strings in the String array pair. pair[0] == aardvark pair[1]==cerdo
             // hormiquero
             Node newNode = new Node(new String[] { englishWord, pair[1] }); // Create a new node with the
                                                                             // English-Spanish pair
-
             if (root == null) {
                 root = newNode; // If the tree is empty, set the new node as the root
                 return;
             }
-
             Node current = root;
             currentLevelCount = 0; // reset currentLevelCount to 0
 
@@ -258,6 +223,5 @@ public class Lab07_v05 {
             }
             return highestCount;
         }
-
     }
 }
