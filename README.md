@@ -35,8 +35,7 @@ Programmed using *Java* in the IDE, *Eclipse*.
      - MergeSort
 
 3. **Bit Manipulation and Merge Sort**
-   - `BitManipulation1.java`
-   - `BitManipulation2.java`
+   - `BitManipulation.java`
    - `MergeSortInts.java`
    - `MergeSortStrings.java`
    - **Pen and Paper:**
