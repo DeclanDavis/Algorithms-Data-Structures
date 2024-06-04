@@ -23,53 +23,21 @@ Programmed using *Java* in the IDE, *Eclipse*.
 
 ## **Semester 2 - Data Structures and Algorithms 2 (5 credits)**
 
-1. **Monte Carlo Simulation**
-   - `Traitors-MonteCarlo.java`
+1. `Traitors-MonteCarlo.java`
+2. `RecursionFactorial.java` , `RecursionPalindrome.java` , `RecursionLoanRepayment.java` , `RecursionClassFailTester.java`
+3. `BitManipulation.java` , `MergeSortInts.java` , `MergeSortStrings.java`
+4. `LinkedList.java`
+5. `BinarySearchTree.java`
+6. `CollatzLength.java`
+7. `EnglishToSpanishBT.java`
+8. `HuffmanEncoding.java`
+9. `Quicksort.java`     
+10. `TSPNearestNeighbour.java`
 
-2. **Recursion Examples**
-   - `RecursionFactorial.java`
-   - `RecursionPalindrome.java`
-   - `RecursionLoanRepayment.java`
-   - `RecursionClassFailTester.java`
-   - **Pen and Paper:**
-     - MergeSort
-
-3. **Bit Manipulation and Merge Sort**
-   - `BitManipulation.java`
-   - `MergeSortInts.java`
-   - `MergeSortStrings.java`
-   - **Pen and Paper:**
-     - Bit Manipulation
-
-4. **Linked Lists**
-   - `LinkedList.java`
-   - **Pen and Paper:**
-     - Linked Lists
-
-5. **Binary Search Tree**
-   - `BinarySearchTree.java`
-   - **Pen and Paper:**
-     - Binary Tree Insertion and Level Count
-
-6. **Collatz Conjecture**
-   - `CollatzLength.java`
-
-7. **Binary Trees and Language Translation**
-   - `EnglishToSpanishBT.java`
-   - **Pen and Paper:**
-     - Binary Tree Insertion and Deletion
-
-8. **Huffman Encoding**
-   - `HuffmanEncoding.java`
-   - **Pen and Paper:**
-     - Huffman Tree
-     - Huffman Code
-     - Compression Ratio against 7 bit ASCII
-
-9. **Sorting Algorithm**
-   - `Quicksort.java`
-   - **Pen and Paper:**
-     - Quicksort
-
-10. **Traveling Salesman Problem**
-    - `TSPNearestNeighbour.java`
+**Pen and Paper:**
+- MergeSort
+- Quicksort
+- Huffman Tree, Huffman Code, Compression Ratio against 7 bit ASCII
+- Binary Tree Insertion and Deletion
+- Linked Lists
+- Bit Manipulation
