@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class recursionFactorial {
+public class RecursionFactorial {
 	public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
